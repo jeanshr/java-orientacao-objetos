@@ -1,0 +1,14 @@
+
+public class ContaPagar {
+	private String descricao;
+	private Double valor;
+	private String dataVencimento;
+	
+	ContaPagar(){}
+	ContaPagar(String fornecedor, String descricao, Double valor, String dataVencimento){	
+		this.descricao = descricao;
+		this.valor = valor;
+		this.dataVencimento = dataVencimento;
+	}
+
+}

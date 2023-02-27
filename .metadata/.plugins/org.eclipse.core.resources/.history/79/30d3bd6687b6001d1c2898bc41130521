@@ -1,0 +1,10 @@
+package com.algaworks.matematica.util;
+
+public class TesteMatematica {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

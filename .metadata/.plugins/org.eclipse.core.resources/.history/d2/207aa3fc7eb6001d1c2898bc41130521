@@ -1,0 +1,55 @@
+
+public class ContaPagar {
+	private String descricao;
+	private Double valor;
+	private String dataVencimento;
+	private String fornecedor;
+	
+	//construtores
+	
+	ContaPagar(){}
+	ContaPagar(String fornecedor, String descricao, Double valor, String dataVencimento){	
+		this.descricao = descricao;
+		this.valor = valor;
+		this.dataVencimento = dataVencimento;
+	}
+	
+	
+	//métodos
+
+	void pagar(String descricao, Double valor, String dataVencimento, Fornecedor fornecedor) {
+		
+		System.out.println("Descrição: " + getDescricao() + "\n" + 
+		"Valor: " + getValor() + " \n" + 
+				"Data Vencimento: " + getDataVencimento() + "\n" + 
+		"Fornecedor: " + getFornecedor());
+		
+	}
+	
+	//getters e setters
+	
+	public String getDescricao() {
+		return descricao;
+	}
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+	public Double getValor() {
+		return valor;
+	}
+	public void setValor(Double valor) {
+		this.valor = valor;
+	}
+	public String getDataVencimento() {
+		return dataVencimento;
+	}
+	public void setDataVencimento(String dataVencimento) {
+		this.dataVencimento = dataVencimento;
+	}
+	public String getFornecedor() {
+		return fornecedor;
+	}
+	public void setFornecedor(String fornecedor) {
+		this.fornecedor = fornecedor;
+	}
+}

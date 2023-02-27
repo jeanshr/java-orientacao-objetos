@@ -1,0 +1,18 @@
+
+public class TesteEncapsulamento {
+	
+	public static void main(String[] args) {
+		
+		ArCondicionado ar = new ArCondicionado();
+		
+		ar.temperatura = 20;
+		
+		System.out.println("Temperatura atual: " + ar.temperatura + " graus celsius");
+		
+		ar.temperatura = 10;
+		
+		System.out.println("Temperatura atual: " + ar.temperatura + " graus celsius");
+		
+	}
+
+}

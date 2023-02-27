@@ -1,0 +1,6 @@
+package com.algaworks.curso.fjoo.modificadorstatic;
+
+public class Contador {
+	public int count = 0;
+
+}

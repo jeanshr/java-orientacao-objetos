@@ -1,0 +1,10 @@
+package com.algaworks.curso.fjoo.enums;
+
+public enum OperacaoAritmetica {
+	
+	ADICAO,
+	SUBTRACAO;
+	
+	public abstract int operacao(int x, int y);
+
+}

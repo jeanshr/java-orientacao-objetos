@@ -1,0 +1,11 @@
+
+public class Principal {
+
+	public static void main(String[] args) {
+		//instanciando em uma variavel chamada carro, o objeto do tipo carro.
+		Carro meuCarro = new Carro();
+
+		Carro seuCarro = new Carro();
+	}
+
+}

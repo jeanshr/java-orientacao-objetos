@@ -1,0 +1,6 @@
+package com.algaworks.curso.fjoo.enums;
+
+public class Carta {
+	private int numero;
+	private Naipe naipe;
+}

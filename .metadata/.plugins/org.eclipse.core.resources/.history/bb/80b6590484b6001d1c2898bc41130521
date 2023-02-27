@@ -1,0 +1,14 @@
+package br.com.algaworks.curso.fjoo.treinadores;
+import com.algaworks.curso.fjoo.aniaml.Cachorro;
+
+public class DonoCachorro {
+
+	public static void main(String[] args) {
+		
+		void ensinarCachorroSentar(Cachorro cachorro) {
+			
+		}
+
+	}
+
+}

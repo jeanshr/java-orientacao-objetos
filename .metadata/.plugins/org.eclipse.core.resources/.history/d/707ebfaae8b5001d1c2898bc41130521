@@ -1,0 +1,14 @@
+
+public class Fornecedor {
+
+	private String nome;
+
+	public String getFornecedor() {
+		return fornecedor;
+	}
+
+	public void setFornecedor(String fornecedor) {
+		this.fornecedor = fornecedor;
+	}
+	
+}

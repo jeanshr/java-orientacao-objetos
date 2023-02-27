@@ -1,0 +1,10 @@
+package com.algaworks.curso.fjoo.enums;
+
+public class TesteOperacaoEnum {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}
