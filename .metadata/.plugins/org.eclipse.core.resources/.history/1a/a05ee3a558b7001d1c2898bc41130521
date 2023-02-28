@@ -1,0 +1,7 @@
+package com.algaworks.curso.fjoo.contapagar;
+
+public enum SituacaoConta {
+	PENDENTE,
+	PAGA,
+	CANCELADA
+}
