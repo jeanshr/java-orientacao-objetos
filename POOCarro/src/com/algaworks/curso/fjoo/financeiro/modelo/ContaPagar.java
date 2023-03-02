@@ -1,11 +1,7 @@
 package com.algaworks.curso.fjoo.financeiro.modelo;
 
-public class ContaPagar {
-	private String descricao;
-	private Double valor;
-	private String dataVencimento;
-	private Fornecedor fornecedor;
-	private SituacaoConta situacaoConta;
+public class ContaPagar extends Conta{
+
 	
 	//construtores
 	
@@ -41,20 +37,7 @@ public class ContaPagar {
 		this.situacaoConta = SituacaoConta.PAGA;
 		}
 	}
-	public void cancelar() {
-		if (SituacaoConta.PAGA.equals(this.getSituacaoConta())) {
-			System.out.println("Não pode cancelar uma conta que já foi paga: " 
-				+ this.getDescricao() + ".");
-		} else if (SituacaoConta.CANCELADA.equals(this.getSituacaoConta())) {
-			System.out.println("Não pode cancelar uma conta que já foi cancelada: " 
-				+ this.getDescricao() + ".");
-		} else {
-			System.out.println("Cancelando conta " + this.getDescricao() + ".");
-			
-			// altera situação da conta para CANCELADA
-			this.situacaoConta = SituacaoConta.CANCELADA;
-		}
-	}
+
 	public String getDescricao() {
 		return this.descricao;
 	}

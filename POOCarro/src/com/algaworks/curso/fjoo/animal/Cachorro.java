@@ -1,4 +1,4 @@
-package com.algaworks.curso.fjoo.aniaml;
+package com.algaworks.curso.fjoo.animal;
 
 public class Cachorro {
 	
