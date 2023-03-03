@@ -18,13 +18,13 @@ public class PrincipalJavaBeans {
 				// instanciando contas a pagar
 				ContaPagar contaPagar1 = new ContaPagar();
 				contaPagar1.setDescricao("Aluguel da matriz");
-				//contaPagar1.setValor(1230d);
-				contaPagar1.setValor(50000d);
+				contaPagar1.setValor(1230d);
 				contaPagar1.setDataVencimento("10/05/2012");
 				contaPagar1.setFornecedor(imobiliaria);
 				
 				ContaPagar contaPagar2 = new ContaPagar(mercado, "Compras do mês", 390d, "19/05/2012");
 				
+				// instanciando contas a receber
 				ContaReceber contaReceber1 = new ContaReceber();
 				contaReceber1.setDescricao("Desenvolvimento de projeto de logística em Java");
 				contaReceber1.setValor(89500d);
@@ -34,13 +34,11 @@ public class PrincipalJavaBeans {
 				ContaReceber contaReceber2 = new ContaReceber(telecom, "Manutenção em sistema de conta online", 
 					53200d, "13/05/2012");
 				
-				// pagamento e cancelamento de contas a pagar
-				contaPagar1.pagar();
-				contaPagar2.cancelar();
-
-				// recebimento e cancelamento de contas a receber
-				contaReceber1.receber();
-				contaReceber2.cancelar();
+				// exibe listagem de todas as contas com detalhamento
+				RelatorioContas relatorio = new RelatorioContas();
+				Conta[] contas = new Conta[]{contaPagar1, contaPagar2, contaReceber1, contaReceber2};
+				
+				relatorio.exibirListagem(contas);
 	}
 
 }
