@@ -63,4 +63,7 @@ public class ContaReceber extends Conta{
 	public void setFornecedor(Cliente cliente) {
 		this.cliente = cliente;
 	}
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
 }

@@ -25,23 +25,22 @@ public class PrincipalJavaBeans {
 				
 				ContaPagar contaPagar2 = new ContaPagar(mercado, "Compras do mês", 390d, "19/05/2012");
 				
-				// instanciando contas a receber
-				ContaReceber contaReceber1 = new ContaReceber(atacadista,"Desenvolvimento de projeto de logística em Java", 89500d,"23/05/2012" );
-//				contaReceber1.setDescricao("Desenvolvimento de projeto de logística em Java");
-//				contaReceber1.setValor(89500d);
-//				contaReceber1.setDataVencimento("23/05/2012");
-//				contaReceber1.setFornecedor(atacadista); //estava setCliente
+				ContaReceber contaReceber1 = new ContaReceber();
+				contaReceber1.setDescricao("Desenvolvimento de projeto de logística em Java");
+				contaReceber1.setValor(89500d);
+				contaReceber1.setDataVencimento("23/05/2012");
+				contaReceber1.setCliente(atacadista);
 				
-//				ContaReceber contaReceber2 = new ContaReceber(telecom, "Manutenção em sistema de conta online", 
-//					53200d, "13/05/2012");
+				ContaReceber contaReceber2 = new ContaReceber(telecom, "Manutenção em sistema de conta online", 
+					53200d, "13/05/2012");
 				
 				// pagamento e cancelamento de contas a pagar
-//				contaPagar1.pagar();
-//				contaPagar2.cancelar();
+				contaPagar1.pagar();
+				contaPagar2.cancelar();
 
 				// recebimento e cancelamento de contas a receber
-				//contaReceber1.receber();
-				contaReceber1.cancelar();
+				contaReceber1.receber();
+				contaReceber2.cancelar();
 	}
 
 }
